@@ -48,4 +48,13 @@ public class MemberDAO {
 		return loginMember;
 	}
 
+	public int emailDupCheck(String memberEmail) {
+		return sqlSession.selectOne("memberMapper.emailDupCheck", memberEmail);
+	}
+	
+
+	public int nicknameDup(String memberNickname) {
+		return sqlSession.selectOne("memberMapper.nicknameDupCheck", memberNickname);
+		}
+
 }

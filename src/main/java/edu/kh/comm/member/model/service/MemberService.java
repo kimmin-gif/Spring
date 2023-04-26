@@ -21,12 +21,26 @@ public interface MemberService {
 	 * @return loginMember
 	 */
 	public abstract Member login(Member inputMember);
+
 	
+	/** 이메일 중복 검사
+	 * @param memberEmail
+	 * @return
+	 */
+	public abstract int emailDupCheck(String memberEmail);
 	
+
+
+//닉네임 중복 검사
+	public abstract int nicknameDup(String memberNickname);
+ 
+// 회원가입
+
+
 	
-	
-	
-	
-	
-	
+
+// 회원 1명 정보 조회
+
+// 회원 목록 조회
+
 }
